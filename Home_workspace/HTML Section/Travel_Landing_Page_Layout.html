@@ -4,51 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Total Travel Solution</title>
+    <link rel="stylesheet" href="../CSS Section/Travel_landing_page.css">
 </head>
-<body>
-    <header class="header">
-    <div class="logo">Total Travel Solution</div>
 
-        <nav>
+<body>
+    
+    <header class="header">
+        <div class="logo">Total Travel Solution</div>
+
+        <nav class="nav-links">
             <a href="#">Login</a>
             <a href="#">Home</a>
-            <a href="#">Booking Details</a>
+            <a href="#">Booking</a>
             <a href="#">Contact</a>
         </nav>
     </header>
-    
+
     <section class="hero">
         <h1>Book Your Journey</h1>
-        <p> Fast, Relible, And Easy Travel Booking</p>
+        <p>Fast, Reliable, and Easy Travel Booking</p>
     </section>
-    <br><br>
-    <a href="#" target="_blank">Charts / Vacancy</a>
-    <a href="#" target="_blank">Booking Status</a>
-    <br><br>
-    <label for="From">From</label>
-    <input id="From" type="text" required placeholder="STARTING POINT">
-    <br><br>
-    <label for="TO">To</label>
-    <input type="text" id="TO" required placeholder="ENDING POINT">
-    <input type="date" required>
-    <br><br>
-    <select>
-        <option selected disabled="disabled">All Classes</option>
-        <option value="Sleeper">sleeper</option>
-        <option value="Tatkal">Tatkal</option>
-        <option value="Ac">AC couch</option>
-    </select>
-    <br><br>
-    <input type="checkbox" id="check"  >
-    <label for="check">Person With Disability Concession</label>
-    <input type="checkbox" id="check" >
-    <label for="check">Flexible With Date</label>
-    <br><br>
-    <input type="checkbox" id="check" >
-    <label for="check">Train With Available Berth</label>
-    <input type="checkbox" id="check" >
-    <label for="check">Railway pass concession</label>
-    <br><br>
-    <button type="Search">Search</button>
+
+    <section class="search-box">
+        <h2>Travel Details</h2>
+
+        <div class="form-grid">
+
+            <label for="from">From</label>
+            <input id="from" type="text" placeholder="Starting Point" required>
+
+            <label for="to">To</label>
+            <input id="to" type="text" placeholder="Destination" required>
+
+            <label for="date">Journey Date</label>
+            <input id="date" type="date" required>
+
+            <label for="class">Class</label>
+            <select id="class">
+                <option selected disabled>All Classes</option>
+                <option value="Sleeper">Sleeper</option>
+                <option value="AC">AC</option>
+                <option value="Tatkal">Tatkal</option>
+            </select>
+
+        </div>
+
+        <div class="options">
+            <label><input type="checkbox"> Person with Disability</label>
+            <label><input type="checkbox"> Flexible Date</label>
+            <label><input type="checkbox"> Available Berth Only</label>
+            <label><input type="checkbox"> Railway Pass Concession</label>
+        </div>
+
+        <button value="Search" class="search-btn">Search</button>
+
+    </section>
+
 </body>
 </html>
