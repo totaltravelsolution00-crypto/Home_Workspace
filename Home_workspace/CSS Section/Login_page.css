@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #4b79a1, #283e51);
+}
+
+.Content{
+    background: #ffffff;
+    width: 380px;
+    padding: 50px;
+    border-radius: 18px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.Content h1{
+    color: #4b79a1;
+    margin-bottom: 5px;
+}
+
+.subtitle{
+    margin-bottom: 30px;
+    font-size: 14px;
+    color: #777;
+}
+
+input{
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+
+button{
+    color: #ffffff;
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+    border: 1px solid whitesmoke;
+    border-radius: 15px;
+    background-color: #4b79a1;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+    transform: scaleX(1.1);
+    box-shadow: #4b79a1 0px 0px 0px 0px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: cornflowerblue;
+    transition: all 0.3s ease-in-out;
+    transform: scaleX(1.1);
+    box-shadow: #4b79a1 0px 0px 0px 0px;
+}
+
+form a:hover{  
+    color: #a15f4b;
+    cursor: pointer;
+}
+
+.forget{
+    text-align: right;
+}
+
+p a:hover{
+    cursor: pointer;
+    color: #283e51;
+}
+
+@media (max-width: 500px) {
+  .Content {
+      width: 90%;
+      padding: 30px;
+  }
+}
