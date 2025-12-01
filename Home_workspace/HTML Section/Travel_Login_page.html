@@ -3,25 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tavel Login</title>
+    <title>Login</title>
+    <link rel="stylesheet" href="../CSS Section/Login_page.css">
 </head>
 <body>
-    <header class="hearder">
-        <h1> LOGIN </h1>
-    </header>
 
-    <form action="submit">
-        <label for="User">User Name</label>
-        <input id="User" type="text" required placeholder="Email or Phone Number">
-        <br>
-        <label for="Pass">Password</label>
-        <input type="password" required id="Pass" placeholder="Your Password">
-        <br>
-        <input id="Check" type="checkbox">
-        <label for="Check">Remember Me</label>
-        <br>
-        <button value="Submit">LOGIN</button>
-    </form>
-    
+    <section class="Content">
+
+        <h1>Welcome Back</h1>
+        <p class="subtitle"> Login to your Account</p>
+
+        <form action="">
+  
+                <input type="text" placeholder="Email or Password" required>
+                <input type="password" placeholder="Enter your Password" required>
+
+                <button class="login-button">Login</button>
+
+                <a  class="forget" href="#" target="_blank">Forget Password</a>
+        </form>
+
+        <p> Don't have an account ? <a href=""> Creat Now </a> </p>
+
+    </section>
+
 </body>
 </html>
