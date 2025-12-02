@@ -58,6 +58,10 @@ button{
     cursor: pointer;
 }
 
+.Content p a{
+    text-decoration: none;
+}
+
 button:hover{
     background-color: cornflowerblue;
     transition: all 0.3s ease-in-out;
@@ -71,7 +75,13 @@ form a:hover{
 }
 
 .forget{
-    text-align: right;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: end;
+}
+
+.forget a{
+    
 }
 
 p a:hover{
